@@ -42,15 +42,14 @@ var victory = false;
 
 
 if (player > computer) {
-    document.getElementById('vincita-uno').innerHTML = "Computer Wins";
+    console.log("Computer Wins");
     victory = true;
   
 }
 else if(player == computer) {
-    document.getElementById('parita').innerHTML = "No one wins";
+    console.log("No one wins");
   
 }
 else {
-    document.getElementById('vincita-due').innerHTML = "You win!";
-  
+    console.log ("You win!");
 }
