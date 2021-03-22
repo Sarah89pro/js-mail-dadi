@@ -28,3 +28,29 @@ if (logInOk === true) { //correct value
 } else {
     console.log("Error"); //incorrect value
 }
+
+/*Generare un numero random da 1 a 6, sia per il giocatore sia per il computer.
+Stabilire il vincitore, in base a chi fa il punteggio più alto*/
+
+//Random number for Player
+var player = Math.floor (Math.random () * 6) +1;
+
+//Random number for Computer
+var computer = Math.floor (Math.random ()* 6)+1;
+
+var victory = false;
+
+
+if (player > computer) {
+    document.getElementById('vincita-uno').innerHTML = "Computer Wins";
+    victory = true;
+  
+}
+else if(player == computer) {
+    document.getElementById('parita').innerHTML = "No one wins";
+  
+}
+else {
+    document.getElementById('vincita-due').innerHTML = "You win!";
+  
+}
