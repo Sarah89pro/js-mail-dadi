@@ -15,7 +15,7 @@ var logInOk = false;
 
 
 /*FOR: 0 is the starting value of an array,
-emails is 0123 lenght is the numbers of elements within the array,
+emails is 0123 lenght is the numbers of elements within the array, so 4,
 in this case i++ to increase the value by 1*/
 for (var i = 0; i < emails.length; i++) {
     if (emails [i] === logIn) {
